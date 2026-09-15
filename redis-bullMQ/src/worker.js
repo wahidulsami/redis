@@ -5,7 +5,7 @@ const emailWorker = new Worker(
   "emailQueue",
 
   async (job) => {
-    console.log("Processing email:", job.data.email);
+    console.log("Processing email:", job.data.to);
 
     console.log("Job ID:", job.id);
     console.log("Job Name:", job.name);

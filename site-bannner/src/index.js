@@ -22,8 +22,8 @@ app.post("/banner", async (req, res) => {
 
 
 app.get("/banner", async (req, res) => {
-   await redis.get(BANNER_KEY) || "welcome to sami app";
-    res.json({success: true});
+    const banner = await redis.get(BANNER_KEY) || "welcome to sami app";
+    res.json({ success: true, message: banner });
 })
 
 

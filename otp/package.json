@@ -1,7 +1,7 @@
 {
   "name": "src",
   "version": "1.0.0",
-  "description": "site-banner",
+  "description": "OTP generation and verification with Redis TTL",
   "license": "ISC",
   "author": "",
   "type": "module",

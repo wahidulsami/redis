@@ -1,14 +1,13 @@
 {
-  "name": "pub-sub-redis",
+  "name": "src",
   "version": "1.0.0",
-  "description": "Redis Pub/Sub pattern demo with publisher and subscriber",
+  "description": "redis_learn ",
   "license": "ISC",
   "author": "",
   "type": "module",
-  "main": "src/api.js",
+  "main": "src/index.js",
   "scripts": {
-    "pub": "node src/api.js",
-    "sub": "node src/subscriper.js"
+    "dev": "node src/index.js"
   },
   "dependencies": {
     "express": "^5.2.1",

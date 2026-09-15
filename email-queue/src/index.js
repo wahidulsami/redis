@@ -15,7 +15,7 @@ app.post("/emails", async (req, res) => {
         to : req.body.to,
         subject : req.body.subject || 'no subject',
         body : req.body.body ||  'no body',
-        createat : new Date().toISOString()
+        createdAt: new Date().toISOString()
     }
     await redis.lpush(queueKey, JSON.stringify(job));
     res.json({ success: true, message: "Email added to queue" });
